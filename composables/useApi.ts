@@ -24,10 +24,8 @@ export function usePrivateApi (): AxiosInstance {
           prevRequest._retry = true
 
           try {
-            console.log('Old token: ', localStorage.getItem('accessToken')) // eslint-disable-line no-console
-            console.log('Trying to refetch ') // eslint-disable-line no-console
             await sessionStore.refreshToken()
-            console.log('New token: ', localStorage.getItem('accessToken')) // eslint-disable-line no-console
+            
             prevRequest.headers.Authorization = `Bearer ${localStorage.getItem('accessToken')}`
 
             return axiosPrivateInstance(prevRequest)
