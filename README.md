@@ -4,6 +4,8 @@ This is NUXT.js playground.
 Right now implemented side API authorization by JWT(Require https://github.com/erastian/NODE_news-api), axios with interceptors and Tailwind for visuals.
 This PG not pretend for something serious, it`s just PG)
 
+Also I`m trying make some subdomains logic here, but it still WIP
+
 
 # Nuxt 3 Minimal Starter
 
